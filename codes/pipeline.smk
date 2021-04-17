@@ -1,5 +1,5 @@
 # only PROJECT_PATH variable and reference needed to change
-PROJECT_PATH='/Users/yiquan/PycharmProjects/SARS-CoV-2/SARS-Competition'
+PROJECT_PATH=config['PROJECTPATH'] #'/Users/yiquan/PycharmProjects/SARS-CoV-2/SARS-Competition'
 
 
 import pandas as pd
