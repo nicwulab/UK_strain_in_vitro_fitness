@@ -23,18 +23,20 @@ jobs:
           show-channel-urls: true
           use-only-tar-bz2: true
           auto-update-conda: true
+      - run: |
+          conda info
+          conda list
+          conda config --show-sources
+          conda config --show
 
       - name: Prep test data 
         run: |
-          conda activate UK_sars
           for FQ in data/*fastq; do cat $FQ | gzip > ${FQ}.gz; done
 
       - name: index bowtie2
         run: |
-          conda activate UK_sars
           bowtie2-build ref/Bavtpat1_complete.fa ref/Bavtpat1_complete.fa
 
       - name: Test pipeline
         run: |
-          conda activate UK_sars
           snakemake -s codes/pipeline.smk -p -j 12 --config PROJECTPATH=$(pwd)
