@@ -1,2 +1,2 @@
 #!/bin/bash
-bowtie Bavtpart1_complete.fa Bavtpart1_complete.fa
+bowtie2-build ../ref/Bavtpart1_complete.fa ../ref/Bavtpart1_complete.fa
