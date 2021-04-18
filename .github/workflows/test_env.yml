@@ -39,4 +39,5 @@ jobs:
 
       - name: Test pipeline
         run: |
-          snakemake -s codes/pipeline.smk -p -j 12 --config PROJECTPATH=$(pwd)
+          cd code 
+          snakemake -s pipeline.smk -p -j 12 --config PROJECTPATH=$(dirname $(pwd))
