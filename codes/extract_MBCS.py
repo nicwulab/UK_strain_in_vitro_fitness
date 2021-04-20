@@ -43,7 +43,8 @@ def extract_MBCS(bamfile):
     start = 23530
     end = 23547
     length = end - start + 1
-    for aln in pysam.Samfile(bamfile).fetch('hCoV-19/England/CAMC-B78080/2020|EPI_ISL_668313|2020-11-12', start, end):
+    chrom = "BavtPat1.fa" #'hCoV-19/England/CAMC-B78080/2020|EPI_ISL_668313|2020-11-12'
+    for aln in pysam.Samfile(bamfile).fetch(chrom, start, end):
         read_count += 1
         MBCS = ''
         for pos in aln.get_aligned_pairs(matches_only=False, with_seq=True):
