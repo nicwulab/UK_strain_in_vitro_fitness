@@ -29,6 +29,12 @@ jobs:
           conda config --show-sources
           conda config --show
 
+      - name: Get mosdepth
+        run: |
+          wget https://github.com/brentp/mosdepth/releases/download/v0.3.1/mosdepth
+          chmod +x mosdepth
+          mv mosdepth /usr/share/miniconda/envs/test-environment/bin
+
       - name: Prep test data 
         run: |
           for FQ in data/*fastq; do cat $FQ | gzip > ${FQ}.gz; done
