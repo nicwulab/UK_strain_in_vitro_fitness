@@ -17,7 +17,7 @@ jobs:
           activate-environment: test-environment
           environment-file: env.yml
           python-version: 3.6
-          channels: bioconda,default,anaconda
+          channels: bioconda,default,anaconda,conda-forge
           allow-softlinks: true
           channel-priority: 'flexible'
           show-channel-urls: true
