@@ -1,5 +1,7 @@
 # UK strain competition  #
 
+[![test pipeline](https://github.com/nicwulab/UK_strain_in_vitro_fitness/actions/workflows/test_env.yml/badge.svg)](https://github.com/nicwulab/UK_strain_in_vitro_fitness/actions/workflows/test_env.yml)
+
 TODO: Proejct detail goes here
 
 ## Create working environment ##
