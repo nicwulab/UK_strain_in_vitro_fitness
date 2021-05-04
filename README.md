@@ -2,7 +2,7 @@
 
 [![test pipeline](https://github.com/nicwulab/UK_strain_in_vitro_fitness/actions/workflows/test_env.yml/badge.svg)](https://github.com/nicwulab/UK_strain_in_vitro_fitness/actions/workflows/test_env.yml)
 
-TODO: Proejct detail goes here
+This project describes the analysis for the next-generation sequencing data in this study: [Human organoid systems reveal in vitro correlates of fitness for SARS-CoV-2 B.1.1.7](https://www.biorxiv.org/content/10.1101/2021.05.03.441080v1]). 
 
 ## Create working environment ##
 
